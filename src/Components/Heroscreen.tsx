@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Heroscreen = () => {
-  return (
-    <div>Heroscreen</div>
-  )
-}
+  return <div>Heroscreen</div>;
+};
 
-export default Heroscreen
+export default Heroscreen;
