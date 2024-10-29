@@ -11,7 +11,15 @@ const Footer = () => {
             Browse millions of top-rated portfolios to find your perfect
             creative match
           </div>
-          <div className="w-[70%] h-[100px] bg-blue-900"></div>
+          <div className="w-[70%] h-[100px] bg-blue-900">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+            culpa vitae, vel, doloremque, laboriosam totam quam quos dolorem
+            perferendis consequuntur est sapiente repellendus sequi?
+            Perspiciatis minus ea qui error soluta quia voluptates optio
+            quisquam asperiores, deleniti, neque labore quod corporis. Eius,
+            facilis! Tempore, sit explicabo! Qui voluptate ab corporis iste, at,
+            molestiae porro quis, aspernatur accusamus quae et ipsum?
+          </div>
         </div>
       </div>
     </div>
