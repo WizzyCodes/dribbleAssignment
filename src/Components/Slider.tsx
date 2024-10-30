@@ -145,7 +145,7 @@ const Card: FC<iProps> = ({ el }) => {
         backgroundSize: "cover",
         borderRadius: "20px",
         overflowX: "hidden",
-        // overflowY: "hidden",
+        overflowY: "hidden",
         display: "flex",
         justifyContent: "center",
         alignItems: "end",
