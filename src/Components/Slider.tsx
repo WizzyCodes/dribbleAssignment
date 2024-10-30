@@ -108,11 +108,11 @@ const slider = () => {
     return () => control.stop();
   }, [xMovement, width, duration, render]);
   return (
-    <div>
+    <div className=" mt-10 overflow-hidden lg:mt-14">
       <motion.div
         ref={ref}
         style={{ x: xMovement }}
-        className="flex w-max gap-4"
+        className="flex w-max gap-4 "
       >
         {Array.from({ length: 11 }, (_, index) => {
           return media.map((item) => <Card key={item.id} el={item} />);
@@ -144,7 +144,7 @@ const Card: FC<iProps> = ({ el }) => {
         height: "19rem",
         backgroundSize: "cover",
         borderRadius: "20px",
-        // overflow: "hidden",
+        overflow: "hidden",
         overflowX: "hidden",
         overflowY: "hidden",
         display: "flex",
