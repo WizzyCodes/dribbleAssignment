@@ -9,6 +9,26 @@ import {
 import { HiMenu, HiX } from "react-icons/hi";
 import SVG from "./svg";
 
+const navs = [
+  "For designers",
+  "Hire talent",
+  "Inspiration",
+  "Advertising",
+  "Blog",
+  "About",
+  "Careers",
+  "Support",
+];
+
+const navs1 = [
+  "Jobs",
+  "Designers",
+  "Freelancers",
+  "Tags",
+  "Places",
+  "Resources",
+];
+
 const Footer: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -17,7 +37,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="overflow-hidden">
       {/* Main Section */}
       <section className="flex flex-col items-center text-center bg-yellow-200 py-16 px-5 sm:px-10 md:px-20 lg:px-32 xl:px-40 2xl:px-60 mt-10 w-full">
         <div className="w-full lg:w-[55%]">
@@ -31,7 +51,7 @@ const Footer: React.FC = () => {
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          <div className="flex flex-col sm:flex-row gap-4 mb-8 ml-14">
             <button className="bg-gray-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-gray-700 transition">
               Get started now
             </button>
@@ -59,17 +79,10 @@ const Footer: React.FC = () => {
 
           {/* Desktop Links */}
           <ul className="hidden md:flex space-x-6 font-semibold">
-            <li className="text-black cursor-pointer">For designers</li>
-            <li className="text-black cursor-pointer">Hire talent</li>
-            <li className="text-black cursor-pointer">Inspiration</li>
-            <li className="text-black cursor-pointer">Advertising</li>
-            <li className="text-black cursor-pointer">Blog</li>
-            <li className="text-black cursor-pointer">About</li>
-            <li className="text-black cursor-pointer">Careers</li>
-            <li className="text-black cursor-pointer">Support</li>
+            {navs.map((el) => (
+              <li className="text-black cursor-pointer">{el}</li>
+            ))}
           </ul>
-
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden text-2xl text-gray-700"
             onClick={toggleMobileMenu}
@@ -90,14 +103,9 @@ const Footer: React.FC = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden flex flex-col items-center w-full pb-4">
             <ul className="space-y-4 font-semibold text-center">
-              <li className="text-black cursor-pointer">For designers</li>
-              <li className="text-black cursor-pointer">Hire talent</li>
-              <li className="text-black cursor-pointer">Inspiration</li>
-              <li className="text-black cursor-pointer">Advertising</li>
-              <li className="text-black cursor-pointer">Blog</li>
-              <li className="text-black cursor-pointer">About</li>
-              <li className="text-black cursor-pointer">Careers</li>
-              <li className="text-black cursor-pointer">Support</li>
+              {navs.map((el) => (
+                <li className="text-black cursor-pointer">{el}</li>
+              ))}
             </ul>
             <div className="flex space-x-4 mt-4">
               <FaTwitter className="text-gray-700 hover:text-gray-900 cursor-pointer" />
@@ -119,12 +127,9 @@ const Footer: React.FC = () => {
             <span className="hover:text-gray-900 cursor-pointer">Cookies</span>
           </p>
           <ul className="flex flex-wrap justify-center space-x-4 text-gray-500">
-            <li className="hover:text-gray-900 cursor-pointer">Jobs</li>
-            <li className="hover:text-gray-900 cursor-pointer">Designers</li>
-            <li className="hover:text-gray-900 cursor-pointer">Freelancers</li>
-            <li className="hover:text-gray-900 cursor-pointer">Tags</li>
-            <li className="hover:text-gray-900 cursor-pointer">Places</li>
-            <li className="hover:text-gray-900 cursor-pointer">Resources</li>
+            {navs1.map((el) => (
+              <li className="hover:text-gray-900 cursor-pointer">{el}</li>
+            ))}
           </ul>
         </footer>
       </div>
