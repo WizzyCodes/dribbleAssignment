@@ -147,13 +147,13 @@ const Header: React.FC = () => {
       <div className="lg:flex  sm:hidden md:hidden">
         <a
           href="#"
-          className="text-black hover:text-gray-800 lg:mr-4 md:mr-3 sm:mr-2 xs:mr-1"
+          className="text-black hover:text-gray-800 lg:mr-4 md:mr-3 sm:mr-2"
         >
           Find Jobs
         </a>
         <a
           href="#"
-          className="text-black hover:text-gray-800 lg:mr-4 md:mr-3 sm:mr-2 xs:mr-1"
+          className="text-black hover:text-gray-800 lg:mr-4 md:mr-3 sm:mr-2"
         >
           Blog
         </a>
